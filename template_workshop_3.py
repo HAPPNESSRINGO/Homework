@@ -117,27 +117,28 @@ Examines three variables (x, y and z) and prints the largest, odd number among t
 If none of them are odd, it should print a message reflecting that situation.
 """ 
 
-x = int(input("Enter the first number (x): "))  # Fix 1: Convert input to an integer to ensure correct type
-y = int(input("Enter the second number (y): "))  # Fix 2: Convert input to an integer to ensure correct type
-z = int(input("Enter the third number (z): "))  # Fix 3: Convert input to an integer to ensure correct type
+x = int(input("Enter the first number (x): "))# should ensure x is an integer type
+y = int(input("Enter the second number (y): ")) 
+z = int(input("Enter the third number (z): ")) 
+ 
+# Initialize largest_odd to: 0 if no odd number,  
+# or to: the value of the first odd in the options 
+largest_odd = max(x if x % 2 != 0 else 0, y if y % 2 != 0 else 0, z if z % 2 != 0 else 0) # may not initialize largest_odd properly if only one or two numbers are odd. 
 
-# Initialize largest_odd to 0 if no odd number is found
-# or to the value of the first odd number
-largest_odd = x if x % 2 != 0 else 0  # Fix 4: Correct the initialization logic to check if x is odd
 
-# Check each number and update largest_odd if it is odd and greater than current largest_odd
-if y % 2 != 0 and y > largest_odd:
-    largest_odd = y  # Fix 5: Correct logic to update largest_odd with y if y is odd and greater
-if z % 2 != 0 and z > largest_odd:
-    largest_odd = z  # Fix 6: Correct logic to update largest_odd with z if z is odd and greater
+# Check each number and update largest_odd if it is odd and greater than current largest_odd 
+if largest_odd == 0: # fixed，because of (if),we should use =.
+    # This text is printed when all are even
+    print("None of them are odd") 
+else: 
 
-# Print a message if no odd numbers are found
-if largest_odd == 0:
-    print("None of them are odd")
-else:
-    # Show the largest odd number from x, y, and z
-    print(f"The largest odd number is: {largest_odd}")
+    if y % 2 != 0 and (y > largest_odd): 
+        largest_odd = y # it should be y. 
+    if z % 2 != 0 and (z > largest_odd): # fixed，it incorrectly uses logical operations for initialization, leading to faulty short-circuit behavior and incorrect results.
+        largest_odd = z # The line largest_odd == z uses == which is a comparison operator. It should be an assignment
 
+# Show the largest odd number from x, y and z 
+print(f"For {x}, {y}, {z}, the largest odd number is: {largest_odd}") # if use {x, y, z},it's a tuple.Therefore, when printing, the console will display it in the tuple format like (1, 2, 5). 
 #%% Exercise 7
 # Ask the user for the type of conversion
 conversion_type = int(input("Enter 1 for 12h to 24h conversion, or 2 for 24h to 12h conversion: "))

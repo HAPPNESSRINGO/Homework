@@ -117,7 +117,7 @@ guess = user_number / 2
 iterations = 0
 
 # Use Heron's method
-while -0.1 < guess**2 - user_number < 0.1:
+while 0.1 < guess**2 - user_number or guess**2 - user_number<-0.1:
     guess = (guess + user_number / guess) / 2
     iterations += 1  
 

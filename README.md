@@ -1,7 +1,7 @@
-# Technion-Israel Institute of Technology ![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+# Technion-Israel Institute of Technology ![Technion](images/b91b1e882abcbb1c1c099644aa06cb12.jpg)
 ## 凡例：   
 
-**从2024年九月开始，往后python的每一次homework我都会提交在这，且当一种时间的痕迹**
+**从2024年九月开始，往后python的每一次homework我都会提交在这，留下些痕迹**
 
 ### 1.INTRODUCTION TO COMPUTING WITH PYTHON - Winter 2024
 

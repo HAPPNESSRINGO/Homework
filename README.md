@@ -1,4 +1,4 @@
-# Technion-Israel Institute of Technology 
+# Technion-Israel Institute of Technology ![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 ## 凡例：   
 
 **从2024年九月开始，往后python的每一次homework我都会提交在这，且当一种时间的痕迹**

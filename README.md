@@ -7,6 +7,6 @@
 
 [PYTHON - Winter 2024 文件夹](https://github.com/HAPPNESSRINGO/Homework/tree/main/PYTHON%20-%20Winter%202024)
 
-https://moodle.gtiit.edu.cn/moodle/course/view.php?id=2051
+[Moodle](https://moodle.gtiit.edu.cn/moodle/course/view.php?id=2051)
 
 *这一部分是2024年冬季学期python课的homework*   

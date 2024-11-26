@@ -1,4 +1,4 @@
-# Technion-Israel Institute of Technology ![Technion](images/b91b1e882abcbb1c1c099644aa06cb12.jpg)
+# Technion-Israel Institute of Technology ![b91b1e882abcbb1c1c099644aa06cb12.jpeg](https://s2.loli.net/2024/11/26/JPdfRUjwpI4QLOB.jpg)
 ## 凡例：   
 
 **从2024年九月开始，往后python的每一次homework我都会提交在这，留下些痕迹**

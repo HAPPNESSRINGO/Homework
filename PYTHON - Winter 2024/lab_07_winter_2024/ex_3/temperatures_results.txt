@@ -1,0 +1,3 @@
+Maximum Temperature: 149.40 C
+Minimum Temperature: -369.17 C
+Average Temperature: -68.56 C

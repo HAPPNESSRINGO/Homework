@@ -25,7 +25,22 @@ def sprouts(forest, prob_sprouts):
     for i in range(len(forest)):
         if forest[i] == 0 and random_event(prob_sprouts):
             forest[i] = 1
+# Test 1: Create an empty forest
+size = 10  # The number of cells in the forest
+prob_sprouts = 0.6  # The probability of a tree sprouting
 
+# Initialize an empty forest (all cells are empty)
+forest = [0] * size
+
+# Call the sprouts function to simulate tree growth
+sprouts(forest, prob_sprouts)
+
+# Count the number of trees (state 1) that sprouted
+num_trees = forest.count(1)
+
+# Print the forest state and the number of sprouted trees
+print("Forest state after sprouting:", forest)
+print("Number of trees sprouted:", num_trees)
 
 def how_many_survived(forest):
     """

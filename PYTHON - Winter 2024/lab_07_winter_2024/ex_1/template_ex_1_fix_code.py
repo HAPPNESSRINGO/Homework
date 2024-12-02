@@ -72,7 +72,7 @@ def increment_list(a_list):
 
 
 numbers = [1, 3, 5, 7, 9]  # this should not be modified
-new_numbers = numbers
+new_numbers = numbers[:]  # Create a copy of the list
 increment_list(new_numbers)
 
 print(

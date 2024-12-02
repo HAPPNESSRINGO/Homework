@@ -75,8 +75,7 @@ numbers = [1, 3, 5, 7, 9]  # this should not be modified
 new_numbers = numbers[:]  # Create a copy of the list
 increment_list(new_numbers)
 
-print(
-    f"The original numbers are {numbers}, the incremented copy of numbers is {new_numbers}")
+print(f"The original numbers are {numbers}, the incremented copy of numbers is {new_numbers}")
 
 
 # %% Problem E:
@@ -89,7 +88,7 @@ def remove_from_list(the_letter, letters):
     """ 
     This function modifies the letters, removing all the_letter from it. 
     """
-    for position in range(len(letters) - 1, -1, -1):#from the last letter to the first letter
+    for position in range(-1, -len(letters)-1, -1):#from the last letter to the first letter
         element = letters[position]
         if element == the_letter:
             letters.pop(position)

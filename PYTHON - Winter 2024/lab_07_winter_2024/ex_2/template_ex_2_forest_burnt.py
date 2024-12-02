@@ -45,15 +45,19 @@ def lightning(forest, prob_lightning):
 
 
 def spread(forest):
-    new_forest = forest[:]
-    for i in range(len(forest)):
-        if forest[i] == -1:
-            # Spread fire to the left
-            if i > 0 and forest[i - 1] == 1:
-                new_forest[i - 1] = -1
-            # Spread fire to the right
-            if i < len(forest) - 1 and forest[i + 1] == 1:
-                new_forest[i + 1] = -1
+    new_forest = forest[:]  # Make a copy of the forest
+
+    # Pass 1: Spread fire from left to right
+    for i in range(1, len(forest)):
+        if forest[i - 1] == -1 and forest[i] == 1:
+            new_forest[i] = -1
+
+    # Pass 2: Spread fire from right to left
+    for i in range(len(forest) - 2, -1, -1):
+        if forest[i + 1] == -1 and forest[i] == 1:
+            new_forest[i] = -1
+
+    # Update the original forest
     forest[:] = new_forest
 
 
